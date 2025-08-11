@@ -1,0 +1,7 @@
+./bin/bitcrack.exe -p 131072 --keyspace 20000000:3fffffff 1LHtnpd8nU5VHEMkG2TMYYNUjjLc992bps
+./bin/bitcrack.exe -p 131072 -i target.txt
+./bin/bitcrack.exe -i target.txt -o result.txt
+
+
+linux
+./bin/bitcrack -p 8000 -i target.txt -o result.txt
