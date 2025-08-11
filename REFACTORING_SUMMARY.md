@@ -53,8 +53,6 @@ Bitcrack/
 ├── bin/              # Build output
 ├── build/            # Build artifacts
 ├── Makefile          # Simple build system
-├── CMakeLists.txt    # Alternative build
-└── build.bat         # Windows build script
 ```
 
 ### 3. **Consolidated Source Files**
@@ -86,9 +84,7 @@ All header files are now in the `include/` directory:
 
 ### 5. **Updated Build System**
 - **Makefile**: Simple, clean build configuration
-- **CMakeLists.txt**: Alternative CMake build
-- **build.bat**: Windows build script
-- Configured for your OpenCL SDK path: `C:/Program Files (x86)/OCL_SDK_Light/`
+- Configured for your OpenCL SDK path: `AMD_APP_SDK/2.9-1/lib/x86_64`
 
 ### 6. **Removed Unnecessary Components**
 - All CUDA code and dependencies
@@ -115,7 +111,7 @@ All header files are now in the `include/` directory:
 - Clear dependency structure
 
 ### 4. **Easier Building**
-- Simple `make` command or `build.bat`
+- Simple `make` command
 - No complex dependency management
 - Clear error messages
 
@@ -139,41 +135,23 @@ All header files are now in the `include/` directory:
 
 ## Build Instructions
 
-### Windows
-```bash
-# Run the build script
-build.bat
-```
-
-### Linux/macOS
 ```bash
 # Build using make
 make clean
 make all
 ```
 
-### Using CMake
-```bash
-mkdir build
-cd build
-cmake ..
-make
-```
-
 ## Next Steps
 
-1. **Test the build**: Run `build.bat` to ensure everything compiles
-2. **Verify OpenCL**: Test with `./bin/bitcrack.exe --list-devices`
-3. **Test functionality**: Try a small keyspace search
-4. **Optimize**: Adjust OpenCL parameters for your specific hardware
+1. **Verify OpenCL**: Test with `./bin/bitcrack.exe --list-devices`
+2. **Test functionality**: Try a small keyspace search
+3. **Optimize**: Adjust OpenCL parameters for your specific hardware
 
 ## Files Modified/Created
 
 ### New Files
-- `CMakeLists.txt` - CMake build configuration
 - `Makefile` - Simplified Makefile
-- `build.bat` - Windows build script
-- `README_SIMPLIFIED.md` - New documentation
+- `README.md` - New documentation
 - `REFACTORING_SUMMARY.md` - This summary
 
 ### Modified Files

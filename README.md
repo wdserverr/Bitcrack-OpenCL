@@ -38,26 +38,10 @@ Bitcrack/
 3. **Make**: GNU Make for building
 
 ## Building
-
-### Windows
-```bash
-# Run the build script
-build.bat
-```
-
-### Linux/macOS
 ```bash
 # Build using make
 make clean
 make all
-```
-
-### Using CMake (Alternative)
-```bash
-mkdir build
-cd build
-cmake ..
-make
 ```
 
 ## Usage
@@ -70,7 +54,7 @@ make
 ./bin/bitcrack.exe --list-devices
 
 # Search for a specific address
-./bin/bitcrack.exe 1FshYsUh3mqgsG29XpZ23eLjWV8Ur3VwH
+./bin/bitcrack.exe 15JhYXn6Mx3oF4Y7PcTAv2wVVAuCFFQNiP
 
 # Search with specific keyspace
 ./bin/bitcrack.exe --keyspace 80000000:ffffffff 1FshYsUh3mqgsG29XpZ23eLjWV8Ur3VwH
